@@ -1,0 +1,43 @@
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+.image-fullsize {width: 100%; height: 100%;}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: var(--fontcolor-1);
+
+    background-color: var(--backgroundcolor-1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root
+{
+    --lightmode-fontcolor-1: oklch(7% 0 0);
+    --darkmode-fontcolor-1 : oklch(93% 0 0);
+
+    --lightmode-backgroundcolor-1: oklch(98% 0 0);
+    --lightmode-backgroundcolor-2: oklch(93% 0 0);
+    --lightmode-backgroundcolor-3: oklch(88% 0 0);
+    --lightmode-backgroundcolor-4: oklch(83% 0 0);
+
+    --darkmode-backgroundcolor-1: oklch(2% 0 0);
+    --darkmode-backgroundcolor-2: oklch(7% 0 0);
+    --darkmode-backgroundcolor-3: oklch(25% 0 0);
+    --darkmode-backgroundcolor-4: oklch(30% 0 0);
+}
+
+:root
+{
+    --fontcolor-1: var(--lightmode-fontcolor-1);
+    --backgroundcolor-1: var(--lightmode-backgroundcolor-1);
+    --backgroundcolor-2: var(--lightmode-backgroundcolor-2);
+    --backgroundcolor-3: var(--lightmode-backgroundcolor-3);
+    --backgroundcolor-4: var(--lightmode-backgroundcolor-4);
+}
